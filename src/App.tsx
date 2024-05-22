@@ -1,17 +1,25 @@
-import "./App.css";
-import LayoutComponents from "./components/LayoutComponents";
-import ModalComponents from "./components/ModalComponents";
-import PlayMusicButton from "./components/elemen/PlayMusicButton";
+import { RouteObject } from "react-router-dom";
+import { useRoutes } from "react-router-dom";
+
+import "./assets/style/App.css";
+
+import Home from "./page/Home";
 
 function App() {
-  return (
-    <>
-      <LayoutComponents>
-        <ModalComponents />
-        <PlayMusicButton/>
-      </LayoutComponents>
-    </>
-  );
+  const routes: RouteObject[] = [
+    {
+      path: "/",
+      element: <Home />,
+      children: [
+        { index: true, element: <Home /> },
+
+        { path: ":id", element: <Home /> },
+      ],
+    },
+  ];
+
+    const element = useRoutes(routes);
+  return <>{element}</>;
 }
 
 export default App;
