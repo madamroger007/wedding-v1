@@ -3,11 +3,21 @@ import { clsx } from "clsx";
 import { ModalW, GarisLengkung2 } from "../data.d";
 import { FaEnvelope } from "react-icons/fa";
 import { useParams } from "react-router-dom";
-function ModalComponents() {
-  const [open, setOpen] = React.useState(false);
+
+interface Props{
+
+  isOpen:boolean
+  setIsOpen:React.Dispatch<React.SetStateAction<boolean>>
+}
+function ModalComponents(props:Props) {
+  
   const { id } = useParams<"id">();
   return (
-    <section className={clsx("fixed z-10", open && "hidden")}>
+    <section 
+    className={
+      "fixed h-screen w-screen left-0 top-0 z-20 transition-all duration-1000" +
+      (!props.isOpen ? " -translate-y-full" : "")}
+    >
       <div
         className={`w-screen h-screen  bg-no-repeat bg-cover bg-center`}
         style={{ backgroundImage: `url('${ModalW}')` }}
@@ -26,7 +36,7 @@ function ModalComponents() {
 
             <div
               className="btn-primary mt-10 flex justify-center items-center gap-2 cursor-pointer max-w-52"
-              onClick={() => setOpen(true)}
+              onClick={() => props.setIsOpen(false)}
             >
               Buka Undangan <FaEnvelope />
             </div>

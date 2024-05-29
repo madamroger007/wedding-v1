@@ -23,7 +23,7 @@ function HeroBgSection() {
         <div className="flex items-center justify-center">
           <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
             <img
-              src="/img/half%20circle%20flower-500.png"
+              src="/img/half circle flower.png"
               alt=""
               className="couple-main"
             />
@@ -39,7 +39,7 @@ function HeroBgSection() {
             </p>
             <div className="simply-countdown simply-countdown-wedding"></div>
             <br />
-            <CountdownTimer deadline="Wed May 24 2024 18:51:31 GMT+0700 (Waktu Indonesia Barat)" />
+            <CountdownTimer deadline="Wed May 30 2024 18:51:31 GMT+0700 (Waktu Indonesia Barat)" />
             <p className="flex flex-col items-center justify-center">
               <a
                 href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW0zY2Ewam91bnUzbW5ub2YwdjVxaTliNmUgcDY4MjI3cmY0dTJ0cWI1b3JrZjEwbTN1NDRAZw&tmsrc=p68227rf4u2tqb5orkf10m3u44%40group.calendar.google.com"

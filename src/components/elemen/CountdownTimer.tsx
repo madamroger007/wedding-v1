@@ -26,8 +26,8 @@ const CountdownTimer = ({ deadline = new Date().toString() }) => {
         Menit: (time / MINUTE) % 60,
         Detik: (time / SECOND) % 60,
       }).map(([label, value]) => (
-        <div className="bg-blue-800 rounded-full md:px-14 md:py-12 px-7 py-5 mx-2 mb-10 animate__animated animate__pulse animate__infinite">
-          <p>{`${Math.floor(value)}`.padStart(2, "0")}</p>
+        <div key={value} className="bg-blue-800 rounded-full md:px-14 md:py-12 px-7 py-5 mx-2 mb-10 animate__animated animate__pulse animate__infinite">
+          <p className="md:text-4xl">{`${Math.floor(value)}`.padStart(2, "0")}</p>
           <span className="font-merriweather md:text-2xl text-base font-bold">{label}</span>
         </div>
       ))}

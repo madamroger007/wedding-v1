@@ -6,6 +6,12 @@ export default function PlayMusicButton() {
   const [playSound, setPlaySound] = React.useState(false);
   const [play, { stop }] = useSound(SoundLove);
 
+
+  React.useEffect(() => {
+    play();
+    setPlaySound(true);
+  }, [play]);
+
   const HandlePlaySound = () => {
     if (playSound) {
       stop();
@@ -16,9 +22,9 @@ export default function PlayMusicButton() {
     console.log(playSound);
   };
   return (
-    <div onClick={HandlePlaySound} className="bg-blue-700 p-5 rounded-full fixed right-0 bottom-0 m-5">
-      <span role="img" aria-label="trumpet">
-        {playSound ? <FaStop/> : <FaPlay  />}
+    <div onClick={HandlePlaySound} className="audio-play">
+      <span role="img" aria-label="trumpet" className="flex justify-center items-center w-full h-full">
+        {playSound ? <FaStop className="text-blue-700"/> : <FaPlay className="text-blue-700" />}
       </span>
     </div>
   );
