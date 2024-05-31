@@ -8,6 +8,9 @@ import SaveDateSection from "../components/section/SaveDateSection";
 import GalerySection from "../components/section/GalerySection";
 import AyatQuranSection from "../components/section/AyatQuranSection";
 import ProtocolSection from "../components/section/ProtocolSection";
+import UcapanSection from "../components/section/UcapanSection";
+import FooterSection from "../components/section/FooterSection";
+import RekeninSection from "../components/section/RekeninSection";
 
 function Home() {
  const [isOpen,setIsOpen] = React.useState<boolean>(true)
@@ -24,6 +27,9 @@ function Home() {
         <GalerySection/>
         <AyatQuranSection/>
         <ProtocolSection/>
+        <UcapanSection/>
+        <RekeninSection/>
+        <FooterSection/>
       </div>
     </LayoutComponents>
   );

@@ -1459,9 +1459,7 @@ form label {
 #fh5co-testimonial .list-group .name {
   font-weight: bold;
 }
-#fh5co-testimonial #button-send {
-  /*margin-top: 25px;*/
-}
+
 
 .feature-left {
   float: left;
@@ -2078,8 +2076,12 @@ form label {
 #fh5co-health-protocol {
   padding: 7em 0;
   position: relative;
+  background-image: url("../img/background/repeat-background/so-white.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
-#fh5co-health-protocol:before {
+/* #fh5co-health-protocol:before {
   content: " ";
   background-size: cover;
   position: absolute;
@@ -2087,13 +2089,13 @@ form label {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0.2;
-  background-image: url("../img/background/blue-brush-1.jpg");
-}
+  opacity: 0.8;
+} */
 #fh5co-health-protocol .icon {
-  width: 54px;
-  height: 54px;
+  width: 100px;
+  height: 100px;
   background: #4d6b92;
+  padding: 20px;
   display: table;
   text-align: center;
   -webkit-box-shadow: 0px 14px 30px -15px rgb(0 0 0 / 75%);
@@ -2108,6 +2110,8 @@ form label {
 #fh5co-health-protocol .description h3 {
   margin-top: 15px;
   margin-bottom: 0;
+  font-family: "Merriweather", "serif";
+  font-size: 20px;
 }
 
 .event-col {
@@ -2343,7 +2347,7 @@ form label {
 /*Mobile*/
 @media (max-width: 768px) {
   .flower-1 {
-    height: 20%;
+    height: 30%;
   }
   .flower-2-left {
     left: -1px;
@@ -2357,24 +2361,24 @@ form label {
   .flower-3-top {
     height: 200px;
     bottom: 40px;
-    top: 5%;
+    top: .7%;
   }
   .flower-4-bottom {
     height: 200px;
-    bottom: 5%;
+    bottom: .7%;
   }
   .flower-bukutamu-right {
-    height: 25%;
+    height: 10%;
   }
   .flower-bukutamu-left {
-    height: 20%;
+    height: 10%;
   }
 }
 
 /*Desktop*/
 @media (min-width: 768px) {
   .flower-1 {
-    height: 30%;
+    height: 40%;
   }
   .flower-2-left {
     height: 60%;
@@ -2384,12 +2388,19 @@ form label {
     height: 60%;
     right: -1px;
   }
+  .flower-bukutamu-right {
+    height: 25%;
+  }
+  .flower-bukutamu-left {
+    height: 25%;
+  }
 }
 
 .lg-backdrop {
   background: #ffffff;
   border: 1px solid #f2f2f2;
 }
+
 
 /* #fh5co-event:before {
   content: " ";

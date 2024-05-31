@@ -43,7 +43,7 @@ function GalerySection() {
                 <div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                         <h2>Galeri Foto</h2>
-                        <h3 style={{ color: "#bf9b73" }}>Khitbah Day - 07 November 2021</h3>
+
                     </div>
                 </div>
                 {/* <div className="row row-bottom-padded-md animate-box">

@@ -35,7 +35,7 @@ function ModalComponents(props:Props) {
             <p className="font-sans ">{id}</p>
 
             <div
-              className="btn-primary mt-10 flex justify-center items-center gap-2 cursor-pointer max-w-52"
+              className="btn btn-primary flex justify-center items-center gap-5 mt-5"
               onClick={() => props.setIsOpen(false)}
             >
               Buka Undangan <FaEnvelope />
