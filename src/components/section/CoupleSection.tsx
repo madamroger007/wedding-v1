@@ -2,7 +2,7 @@ import React from 'react'
 
 function CoupleSection() {
   return (
-    <div id="fh5co-couple" className="bg-[url('/img/background/repeat-background/so-white.png')] bg-cover bg-no-repeat">
+    <div id="fh5co-couple" className="bg-[url('/img/background/repeat-background/so-white.png')] bg-cover bg-no-repeat ">
     <div className="container">
         <img className="flower-2-right" style={{position: "absolute"}} src="/img/background/flowers/right-1.svg" />
         <img className="flower-2-left" style={{position: "absolute"}} src="/img/background/flowers/left-1.svg" />

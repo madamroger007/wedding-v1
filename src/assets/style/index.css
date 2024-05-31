@@ -27,10 +27,13 @@
     @apply font-dancing-script md:text-7xl text-5xl text-blue-900 ;
   }
 }
-
+html,body{
+  padding: 0;
+  margin: 0;
+}
 
 .app {
-  background-color: purple;
+
   color: white;
   font-family: 'Open Sans', sans-serif;
   height: 100vh;

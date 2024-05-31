@@ -9,7 +9,7 @@ $padding-base-vertical: 14px !default;
 $brand-info:rgb(67, 71, 125);
 $brand-warning:yellow;
 $brand-danger:red;
-$brand-primary: #113468 !default;
+$brand-primary: #629ffc !default;
 $brand-secondary: #118DF0 !default;
 $brand-success:green;
 $brand-white: #fff;
@@ -483,11 +483,13 @@ $screen-md:760px;
 			padding-bottom: 20px;
 			text-transform: uppercase;
 			letter-spacing: 2px;
-			font-family: "Sacramento", Arial, serif;
+			
 			font-weight: bold;
 		}
 		p,span{
 			display: block;
+			font-family: "Cookie", "cursive";
+			font-size: 20px;
 			//color: rgba($brand-white,.8);
 		}
 		i{
@@ -498,6 +500,7 @@ $screen-md:760px;
 			width: 50%;
 			float: left;
 			margin-bottom: 30px;
+			padding-top: 30px;
 		}
 	}
 
