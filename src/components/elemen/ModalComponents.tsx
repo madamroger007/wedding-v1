@@ -1,5 +1,4 @@
 import React from "react";
-import { clsx } from "clsx";
 import { ModalW, GarisLengkung2 } from "../data.d";
 import { FaEnvelope } from "react-icons/fa";
 import { useParams } from "react-router-dom";

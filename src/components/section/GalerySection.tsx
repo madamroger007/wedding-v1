@@ -21,7 +21,7 @@ function GalerySection() {
 
 
     ]
-    const openImageViewer = React.useCallback((index) => {
+    const openImageViewer = React.useCallback((index:number) => {
         setCurrentImage(index);
         setIsViewerOpen(true);
     }, []);

@@ -1,4 +1,4 @@
-import React from "react";
+
 import CountdownTimer from "../elemen/CountdownTimer";
 
 function HeroBgSection() {

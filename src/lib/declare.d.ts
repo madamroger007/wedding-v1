@@ -1,4 +1,1 @@
-declare module 'ts' {
-    import useSound from 'use-sound';
-  }
-  
+declare module 'use-sound'
