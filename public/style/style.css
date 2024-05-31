@@ -1185,6 +1185,10 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .couple-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
 }
@@ -1194,7 +1198,7 @@ form label {
   top: 4em;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 10;
   animation: pulse 1s ease infinite;
 }
 .heart i {
@@ -1220,10 +1224,14 @@ form label {
 @media screen and (max-width: 768px) {
   .couple-half {
     width: 100%;
+    display: flex;
+		flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "Allura", "cursive";
   color: #113468;
   font-size: 30px;
 }
@@ -1275,6 +1283,7 @@ form label {
   padding-left: 180px;
   text-align: left;
 }
+
 @media screen and (max-width: 480px) {
   .couple-half .groom,
   .couple-half .bride {
@@ -2054,9 +2063,10 @@ form label {
 }
 
 .parents-font {
-  font-family: "Estonia", Arial, serif;
+  font-family: "Cookie", "cursive";
   font-size: 25px;
   font-weight: bold;
+  color: #05021b;
 }
 
 .tanggal {
@@ -2366,11 +2376,11 @@ form label {
   }
   .flower-2-left {
     height: 60%;
-    left: -30px;
+    left: -20px;
   }
   .flower-2-right {
     height: 60%;
-    right: -30px;
+    right: -1px;
   }
 }
 
